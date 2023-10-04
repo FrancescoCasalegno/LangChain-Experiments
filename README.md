@@ -1,9 +1,25 @@
 
-# Langchain Experiments 🦜🔗
+# 🦜🔗 Langchain Experiments
 
 This repo contains examples of using [LangChain](https://github.com/hwchase17/langchain)
 
-These are the examples that are currently available:
-- [LangChain_Prompt-Model-Parser](LangChain_Prompt-Model-Parser.ipynb): This notebook shows how to use the LangChain library to create a flow for LLM involving the 3 standard components of **prompt** (typically with a **template prompt**), **model** (a LLM, typically some OpenAI model), and **parser** (typically to extract values from the response as a JSON file).
-- **TODO** LangChain_Agent: This notebook shows how to use LangChain to combine the power of LLMs with third-party libraries ("agents") that can solve specific problems (e.g. calculator, Wolfram Alpha, ...) to create a more powerful AI models.
-- **TODO** LangChain_Chains-QA: This notebook shows how to use LangChain to create a flow for QA using embeddings, vector databases, and a retriever-reader architecture for Question-Answering.
+## 📖 Contents
+
+In particular, all main modules of LangChain are demonstrated in the notebooks.
+
+1. [`1_MODEL_IO.ipynb`](1_MODEL_IO.ipynb) — Building blocks for interfacing with LLMs and Chat Models, using Prompt Templates and Output Parsers.
+2. [`2_MEMORY.ipynb`](2_MEMORY.ipynb) — Using Memory buffers or summaries to store information during conversations, since LLMs are stateless.
+3. [`3_CHAINS.ipynb`](3_CHAINS.ipynb) — Create more complex applications by connecting together multiple LLMs components into a Chain.
+4. [`4_AGENTS.ipynb`](4_AGENTS.ipynb) — Create Agents that can leverage LLMs to interact with other Tools, from Wikipedia to Wolfram Alpha, from Google Search to Yahoo Finance.
+
+## 🛠️ Setup
+
+All you need is to create a virtual environment and install the requirements.
+
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+Then, simply open one of the notebooks and run the cells to see the results.
