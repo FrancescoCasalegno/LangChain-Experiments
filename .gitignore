@@ -144,7 +144,6 @@ redis/
 dump.rdb
 
 # data for local development
-data/
 test_data/
 dataset/
 artifacts/

@@ -14,7 +14,15 @@ In particular, all main modules of LangChain are demonstrated in the notebooks.
 
 ## 🛠️ Setup
 
-All you need is to create a virtual environment and install the requirements.
+First of all you need to define some variables for the environment that will be used in the notebooks.
+We do this with a `.env` file, so first copy the provided example `.env.example` to `.env` and fill in the values.
+
+```bash
+cp .env.example .env
+# And now open ".env" with your favorite editor and fill in the values!
+```
+
+Then, all you need is to create a virtual environment and install the requirements.
 
 ```bash
 python -m venv venv
